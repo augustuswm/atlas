@@ -1,0 +1,8 @@
+<ul class="ability-list">
+  {{#each abilities}}
+    <li class="ability">
+      <img class="ability-icon" src="{{this.icon}}" />
+      <div class="ability-cooldown cd-{{this.cooldown}}"></div>
+    </li>
+  {{/each}}
+</ul>
