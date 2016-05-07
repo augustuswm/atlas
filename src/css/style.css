@@ -7,14 +7,15 @@
   position: relative;
   width: 400px;
   height: 200px;
+  margin: 16px;
 }
 
 .freelancer-profile {
   position: absolute;
-  bottom: 27px;
+  bottom: -20px;
   right: 27px;
-  width: 300px;
-  height: 54px;
+  width: 150px;
+  height: 200px;
   background-color: #333;
   border: 2px solid rgba(0, 0, 0, 0.75);
   overflow: hidden;
@@ -23,8 +24,9 @@
 
 .freelancer-portrait {
   position: relative;
-  left: -15px;
-  width: 100%;
+  top: -75%;
+  left: -50px;
+  width: 170%;
   transform: skew(25deg);
 }
 
@@ -40,14 +42,16 @@
   width: 50px;
   margin: 4px;
   padding: 0 8px;
-  background: #a0a0a0; /* Old browsers */
-  background: -moz-linear-gradient(45deg, #a0a0a0 0%, #3f3f3f 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #a0a0a0 0%,#3f3f3f 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #a0a0a0 0%,#3f3f3f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', endColorstr='#3f3f3f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #a0a0a0;
   border-radius: 8px;
   border: 2px solid rgba(0, 0, 0, 0.75);
   transform: skew(-25deg);
+  transition: 500ms background;
+  cursor: pointer;
+}
+
+.ability:hover {
+  background: #3f3f3f;
 }
 
 .ability-icon {
